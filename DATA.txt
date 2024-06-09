@@ -1,0 +1,17 @@
+INSERT INTO users (username, nom, prenom, password, bloque, role, created_at, updated_at) 
+VALUES ('admin', 'Mohamed', 'El Farfachi', '$2y$10$n5NP.Ydbw/p5N3XXTpVY1.BFrOdaBrBrpmTYi7o4Px7Ki2E3pG5aG', 'no', 'admin', NOW(), NOW());
+
+INSERT INTO devises (symbol, description, base, created_at, updated_at) VALUES
+('DH', 'Moroccan Dirham', 1, NOW(), NOW()),
+('DZD', 'Algerian Dinar', 0.074, NOW(), NOW()),
+('AED', 'Emirati Dirham', 2.71, NOW(), NOW()),
+('$', 'United States Dollar', 9.94, NOW(), NOW()),
+('€', 'Euro', 10.81, NOW(), NOW()),
+('£', 'British Pound Sterling', 12.61, NOW(), NOW());
+
+
+INSERT INTO entreprises (titre, description, logo, base_devise, created_at, updated_at) VALUES
+('AymanExchange', 'Exchange society', 'logo_url_a', 'DH', '2024-05-18 12:00:00', '2024-05-18 12:00:00');
+
+
+ALTER TABLE devises MODIFY COLUMN base FLOAT;

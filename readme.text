@@ -1,0 +1,4 @@
+php artisan make:migration create_clients_table
+php artisan migrate
+php artisan make:model Entreprise
+php artisan make:controller EntrepriseController

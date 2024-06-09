@@ -1,0 +1,21 @@
+:root {
+    --color-primary: #64daa5;
+    --color-secondary: #FF8F8F;
+  }
+  
+  /* Usage examples */
+  .element-primary {
+    background-color: var(--color-primary) !important;
+  }
+  
+  .element-secondary {
+    background-color: var(--color-secondary) !important;
+  }
+  .table-res {
+    size: 4px !important;
+    padding-top: 1px !important;
+  }
+  .table-sm td, .table-sm th {
+    padding: 0.3rem !important;
+    font-size: 0.85rem !important;
+}
